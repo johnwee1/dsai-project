@@ -1,3 +1,4 @@
 # dsai-project
-run `uv venv` to create a .venv in cd
-run `uv sync` to sync deps
+python version = 3.11
+uv venv -python 3.11
+uv pip install -r requirements.txt
