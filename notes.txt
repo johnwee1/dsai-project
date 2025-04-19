@@ -1,7 +1,0 @@
-Preprocessing notes:
-
-The data cleaning and preprocessing was done prior to the splitting of the data.
-
-In practice, while logically impossible data is cleaned out first before partitioning,
-Most of the judicious/subjective data cleaning is only done to the training set (because it needs to generalize in prod)
- (idk how we are going to stick to this)

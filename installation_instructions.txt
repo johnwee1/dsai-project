@@ -1,0 +1,1 @@
+Project was done on python 3.11 with dependencies in requirements.txt
