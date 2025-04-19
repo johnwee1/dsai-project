@@ -16,6 +16,25 @@ Data preparation involved spanned two parts - first, there are some malformed da
 EDA was achieved using a combination of box and whisker plots to visualize the distribution of all features. Loan status was also used as a means of separating the data.
 Correlation matrix was graphed and pairwise relationships were analysed for anomalous data. Some data that looked off was then graphed against each other to examine their relationship more carefully, and then cleaned off.
 
+Based off the correlation matrix:
+- loan status (last row) has **highest correlation magnitude with  loan_percent_income and interest rate*
+
+- person_income row:
+The higher the income, the higher the loan amount might be
+Interest rates show almost no correlation to loan profile which is true since in practice since they are driven by mkt forces
+The higher the income, the lower the loan expressed as % of income.
+
+- loan percentage income & person income:
+The higher the loan amount, the higher they were as % of income, i.e. people with lower income take loans that result in higher leverage (to buy big ticket items)
+
+- employment_length:
+We further investigate person_age and person_employment_length, since common sense deduction is that age and credit history length should in practice have stronger correlations. Our discussion is detailed in the video.
+
+
+
+
+
+
 
 
 
