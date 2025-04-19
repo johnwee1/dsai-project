@@ -102,3 +102,4 @@ xxhash==3.5.0
 yellowbrick==1.5
 zipp==3.21.0
 xgboost
+shap==0.47.1
