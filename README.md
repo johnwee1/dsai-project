@@ -1,5 +1,12 @@
 # SC1015 Mini Project: Predicting Credit Risk
 
+## Team Members
+
+Members:
+WEE TSENG I U2322833F
+QUEK JUN SIONG U2322144G
+KUANG YU HENG U2321592J
+
 ### Problem definition based on a dataset
 
 Our dataset is linked here: https://www.kaggle.com/datasets/laotse/credit-risk-dataset/data
