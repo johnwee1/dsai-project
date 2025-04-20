@@ -58,7 +58,18 @@ In training our neural network, we also faced the issue of overfitting, where th
 We also manually experimented with various hyperparameters to obtain the optimal accuracy of ~93% on both the train and test set.
 As 93% was near the limit of all the machine learning models, we suspect that the other 7% of data might be anomalous data, which all models perform poorly on due to their anomalous nature which means they don't follow the general trends/pattern of the data
 
-20% for the use of machine learning techniques to solve specific problem
-20% for the presentation of data-driven insights and the recommendations
-10% for the quality of your final team presentation and overall impressions
-10% for learning something new and doing something beyond this course
+## Decision Trees
+
+Decision Trees
+Decision trees stood out from other machine learning models for their high level of explainability. Unlike black-box models like neural networks, decision trees allow us to trace exactly how a prediction was made by following the path of decisions taken at each node. This interpretability is especially important in financial applications like credit risk prediction, where transparency is key.
+
+Our initial experiments with a single decision tree showed promising accuracy on the training set, but it quickly became apparent that the model was heavily overfitting which a train accuracy of 100%. It failed to generalize to unseen data, reinforcing the common issue with single-tree models—they tend to memorize rather than learn patterns.
+
+To tackle this, we turned to ensemble methods. Random Forests, which use bagging to train multiple decision trees on random subsets of the data, showed improved accuracy of 93% but still with high overfitting of train accuracy at 100%. Boosting methods, particularly XGBoost, performed even better. XGBoost was more robust to overfitting and with higher accuracy of 94%. Encouraged by these results, we applied SHAP (SHapley Additive exPlanations) analysis to interpret the outputs of the boosted trees.
+
+## Insights and Data-Driven Decisions 
+The SHAP analysis revealed the top three most important predictors in our model: person income, interest rate, and loan percent income. Interestingly, these are all forward-looking indicators, tied to a person’s ability to repay the loan rather than their historical behavior. This insight aligns with real-world intuition—income and affordability metrics naturally carry more predictive weight than older or static features.
+
+These findings led us to propose several data-driven recommendations. First, a more granular and forward-looking assessment of income should be implemented, one that accounts not only for current earnings but also for job stability and projected income growth. Second, while interest rates reflect market dynamics, setting a price ceiling on them could be beneficial. Beyond a certain point, excessively high rates may become counterproductive, increasing default risk rather than compensating for it. Lastly, for the loan-to-income ratio, we recommend adopting a sliding scale threshold. Instead of a fixed cutoff, thresholds should be adjusted according to the borrower’s income bracket, ensuring that lower-income individuals are not disproportionately penalized while still maintaining risk control.
+
+
