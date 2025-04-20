@@ -1,5 +1,8 @@
 # SC1015 Mini Project: Predicting Credit Risk
 
+VIDEO LINK: [![Watch the video](https://img.youtube.com/vi/-M-DXhnuZjw/0.jpg)](https://youtu.be/-M-DXhnuZjw)
+Some of my group member was unable to open without git lfs, we have since uploaded the video on youtube for easier viewing.
+
 ## Team Members
 
 Members:
